@@ -1,11 +1,11 @@
 import "./TodoItem.css";
-import {Item , Input , Label , Span , Button} from "./TodoItem.styled.js"
+import {TodoItemDiv , TodoItemIsCompletedInput , TodoItemLabel , TextTodoSpan , DeleteTodoButton} from "./TodoItem.styled.js"
 
 export function TodoItem({ todo, onChange, onDelete }) {
   return (
-    <Item className="item">
-      <Label>
-        <Input
+    <TodoItemDiv>
+      <TodoItemLabel>
+        <TodoItemIsCompletedInput
           className="item-isCompleted"
           type="checkbox"
           checked={todo.isCompleted}
@@ -16,15 +16,15 @@ export function TodoItem({ todo, onChange, onDelete }) {
             });
           }}
         />
-        <Span
+        <TextTodoSpan
           className={todo.isCompleted && "line-through"}
         >
           {todo.text}
-        </Span>
-        <Button onClick={() => onDelete(todo)}>
+        </TextTodoSpan>
+        <DeleteTodoButton onClick={() => onDelete(todo)}>
           X
-        </Button>
-      </Label>
-    </Item>
+        </DeleteTodoButton>
+      </TodoItemLabel>
+    </TodoItemDiv>
   );
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Item = styled.div`
+export const TodoItemDiv = styled.div`
   display: flex;
   position: relative;
   width: 100%;
@@ -13,7 +13,7 @@ export const Item = styled.div`
   font-size: 15px;
 `;
 
-export const Input = styled.input`
+export const TodoItemIsCompletedInput = styled.input`
   position: relative;
   cursor: pointer;
   margin: 10px 50px 0px 10px;
@@ -58,7 +58,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Label = styled.label`
+export const TodoItemLabel = styled.label`
   display: flex;
   position: relative;
   width: 100%;
@@ -70,7 +70,7 @@ export const Label = styled.label`
   padding: 0;
 `;
 
-export const Span = styled.span`
+export const TextTodoSpan = styled.span`
   align-self: center;
   font-size: 23px;
 
@@ -80,7 +80,7 @@ export const Span = styled.span`
   }
 `;
 
-export const Button = styled.button`
+export const DeleteTodoButton = styled.button`
   position: absolute;
   right: 10px;
   padding-top: 5px;

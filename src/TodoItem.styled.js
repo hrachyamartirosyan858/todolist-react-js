@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TodoItemDiv = styled.div`
+export const TodoItemLine = styled.label`
   display: flex;
   position: relative;
   width: 100%;
@@ -13,7 +13,7 @@ export const TodoItemDiv = styled.div`
   font-size: 15px;
 `;
 
-export const TodoItemIsCompletedInput = styled.input`
+export const CompleteTodoCheckbox = styled.input`
   position: relative;
   cursor: pointer;
   margin: 10px 50px 0px 10px;
@@ -58,19 +58,7 @@ export const TodoItemIsCompletedInput = styled.input`
   }
 `;
 
-export const TodoItemLabel = styled.label`
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 50px;
-  border-bottom: solid #e6e6e6 1px;
-  border-right: none;
-  border-left: none;
-  margin: 0;
-  padding: 0;
-`;
-
-export const TextTodoSpan = styled.span`
+export const TextTodoText = styled.span`
   align-self: center;
   font-size: 23px;
 

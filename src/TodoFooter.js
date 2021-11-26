@@ -1,16 +1,16 @@
-import "./TodoFooter.css";
+import { TodoFooterLine , CompletedTodosCounter ,  ClearCompletedButton } from "./TodoFooter.styled.js"
 
 export function TodoFooter({ todos, onClear }) {
   const completed = todos.filter((todo) => todo.isCompleted);
 
   return (
-    <div className="todo-footer">
-      <span className="completed-count">
+    <TodoFooterLine>
+      <CompletedTodosCounter >
         {completed.length}/{todos.length} is completed
-      </span>
-      <button className="clear-completed" onClick={onClear}>
+      </CompletedTodosCounter>
+      <ClearCompletedButton onClick={onClear}>
         Clear completed
-      </button>
-    </div>
+      </ClearCompletedButton>
+    </TodoFooterLine>
   );
 }

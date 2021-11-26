@@ -8,21 +8,21 @@ let nextId = 0
 
 function App() {
   const [todos, setTodos] = useState([
-    // {
-    //   id: nextId++,
-    //   text: "parapel",
-    //   isCompleted: false,
-    // },
-    // {
-    //   id: nextId++,
-    //   text: "resume sarqel",
-    //   isCompleted: false,
-    // },
-    // {
-    //   id: nextId++,
-    //   text: "ynduvel gorci",
-    //   isCompleted: false,
-    // },
+    {
+      id: nextId++,
+      text: "parapel",
+      isCompleted: false,
+    },
+    {
+      id: nextId++,
+      text: "resume sarqel",
+      isCompleted: false,
+    },
+    {
+      id: nextId++,
+      text: "ynduvel gorci",
+      isCompleted: false,
+    },
   ]);
 
  function handleOnAdd(text){

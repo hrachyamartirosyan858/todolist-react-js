@@ -1,4 +1,3 @@
-import "./TodoItem.css";
 import { CompleteTodoCheckbox , TodoItemLine , TextTodoText , DeleteTodoButton} from "./TodoItem.styled.js"
 
 export function TodoItem({ todo, onChange, onDelete }) {

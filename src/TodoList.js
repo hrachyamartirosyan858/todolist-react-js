@@ -1,12 +1,19 @@
 import { TodoItem } from "./TodoItem";
-import "./TodoList.css";
+import { TodoListBox } from "./TodoList.styled";
 
 export function TodoList({ todos, onChange, onDelete }) {
   return (
-    <div className="todo-list">
+    <TodoListBox>
       {todos.map((todo) => {
-        return <TodoItem key={todo.id} todo={todo} onDelete={onDelete} onChange={onChange} />;
+        return (
+          <TodoItem
+            key={todo.id}
+            todo={todo}
+            onDelete={onDelete}
+            onChange={onChange}
+          />
+        );
       })}
-    </div>
+    </TodoListBox>
   );
 }

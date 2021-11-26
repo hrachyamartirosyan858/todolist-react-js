@@ -1,4 +1,6 @@
-.todo-footer {
+import styled from "styled-components";
+
+export const TodoFooterLine = styled.div`
   display: flex;
   position: relative;
   width: 100%;
@@ -8,13 +10,13 @@
   justify-content: space-between;
   align-items: center;
   color: #777;
-}
+`;
 
-.completed-count {
+export const CompletedTodosCounter = styled.span`
   margin-left: 25px;
-}
+`;
 
-.clear-completed {
+export const ClearCompletedButton = styled.button`
   display: inline-flex;
   color: inherit;
   width: 120px;
@@ -26,12 +28,11 @@
   background-color: inherit;
   overflow: hidden;
   text-align: end;
-}
+  :hover {
+    border: 1px solid #e8e1e1;
+  }
 
-.clear-completed:hover {
-  border: 1px solid #e8e1e1;
-}
-
-.clear-completed:focus {
-  border: 1px solid #f9c7c7;
-}
+  :focus {
+    border: 1px solid #f9c7c7;
+  }
+`;
